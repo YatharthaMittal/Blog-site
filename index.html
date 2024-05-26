@@ -32,7 +32,10 @@
 <body>
     <header>
         <div class="main_header">
-            <img src="images/logo-daxx.png" alt="logo">
+            <div class="comapnay name">
+           <img src="images/logo-daxx.png" alt="logo">
+           Company Name
+        </div>
             <input type="checkbox" id="sidebar">
             <label for="sidebar" class="hamburger">
                 <div class="line_1"></div>
@@ -40,31 +43,56 @@
                 <div class="line_3"></div>
             </label>
             <ul class="menu">
-                <li>Home</li>
-                <li>About Us</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li>
+                    <a href="facebook.com" class="menu-item">Dropdown Right</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="menu-item">Item 1</a></li>
+                      <li><a href="#" class="menu-item">Item 2</a></li>
+                      <li><a href="#" class="menu-item">Item 3</a></li>
+                      <li class="dropdown dropdown-right">
+                        <a href="#" class="menu-item expand-btn">
+                          Item 4
+                        </a>
+                        <ul class="dropdown-menu menu-right sample">
+                          <li><a href="#" class="menu-item">Item 4.1</a></li>
+                          <li><a href="#" class="menu-item">Item 4.2</a></li>
+                          <li><a href="#" class="menu-item">Item 4.3</a></li>
+                          <li><a href="#" class="menu-item">Item 4.4</a></li>
+                          <li><a href="#" class="menu-item">Item 4.5</a></li>
+                          <li><a href="#" class="menu-item">Item 4.6</a></li>
+                          <li><a href="#" class="menu-item">Item 4.7</a></li>
+                          <li><a href="#" class="menu-item">Item 4.8</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#" class="menu-item">Item 5</a></li>
+                    </ul>
+                  </li>
                 <li class="dropdown">
-                    Blogs
+                    <a href="#">Blogs</a>
                     <ul class="dropdown_menu">
                         <li>Test-1</li>
                         <li>Test-1</li>
                         <li>Test-1</li>
                     </ul>
                 </li>
-                <li>Schedule</li>
-                <li>contact us</li>
+                
+                <li><a href="#">contact us</a></li>
                 <li><a class="main_btn" href="#">Ask a Question</a></li>
             </ul>
 
         </div>
     </header>
 
+    
 
 
     <section class="hero my-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 p-4" >
-                    <h1 class="custom_h1" data-aos="fade-right">Latest <span>Blogs</span></h1>
+                    <h1 class="custom_h1" >Latest <span>Blogs</span></h1>
                     <div class="content_wrapper mt-5 mb-5" data-aos="flip-up">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo asperiores reprehenderit
                             odit porro quos earum inventore nostrum, dolores iusto, cum quo quasi natus veritatis,
@@ -81,7 +109,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero_img">
-                        <img src="images/hero_img.avif" alt="img" class="img-fluid" data-aos="zoom-in-up">
+                        <img src="images/hero_img.avif" alt="img" class="img-fluid" >
                     </div>
                 </div>
             </div>
@@ -90,7 +118,7 @@
 
     <section class="blogs my-5">
         <div class="container">
-            <div class="blog_heading" data-aos="fade-right">
+            <div class="blog_heading" >
                 <h1 class="custom_h1">Blog <span>List</span></h1>
             </div>
             <div class="blog_wrapper">
@@ -127,6 +155,7 @@
                                         </div>
                                         <div class="blog_date">
                                             <i class="fa-solid fa-calendar-days"></i>
+                                            12/05/2024
                                         </div>
                                         <div class="blog_img">
                                             <img src="images/blog-1.avif" alt="blog-1" class="img-fluid">
@@ -371,11 +400,11 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
-    if($(window).width() < 991){
-        $(".dropdown").click(function(){
-            $(".dropdown_menu").toggle();
-        });
-    }
+    $(document).ready(function(){
+  $(".dropdown").click(function(){
+    $("dropdown_menu").toggle();
+  });
+});
 </script>
 
 <script>
