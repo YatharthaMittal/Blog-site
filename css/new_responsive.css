@@ -21,8 +21,11 @@
   .right_blog_a img{margin-bottom: 20px}
   .right_blog_a:hover img {transform: none;}
   .right_blog_wrapper > div {margin-bottom: 20px;}
+  .footer_wrapper{flex-direction: column;gap: 30px;}
+  .footer_icons{gap:30px;}
   }
 @media only screen and (max-width: 473px) {
   }
 @media only screen and (max-width: 375px) {
+  .footer_icons{gap:15px;font-size: 18px;}
   }
